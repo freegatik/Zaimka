@@ -52,4 +52,19 @@ struct CalculatorViewModelTests {
         #expect(abs(viewModel.overpayment - 6618.56) < 0.01)
         #expect(abs(viewModel.totalPaid - 106_618.56) < 0.01)
     }
+
+    @Test func calculate_withInvalidAmountText_setsAmountError() {
+        let mockRepository = MockCalculatorRepository()
+        let useCase = CalculatorUseCase(repository: mockRepository)
+        let viewModel = CalculatorViewModel(useCase: useCase)
+
+        viewModel.amountText = "not-a-number"
+        viewModel.validateAmount("not-a-number")
+        viewModel.validateTerm("12")
+        viewModel.validateRate("12")
+        viewModel.calculate()
+
+        #expect(viewModel.amountError)
+        #expect(mockRepository.calculateMonthlyPaymentCallCount == 0)
+    }
 }

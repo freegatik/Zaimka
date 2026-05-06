@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01760BE315197D4EC1128D56 /* DebtDetailsInfoBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8B1DCB870651F9C80F499 /* DebtDetailsInfoBlock.swift */; };
 		01871DE51575B5EE67EB8B91 /* CreditDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67C3286DB622413782A18B /* CreditDTO.swift */; };
+		02BBB79BBB0A966AB0B846CB /* RepositoryValidateImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F5947531110F7135047F0 /* RepositoryValidateImplTests.swift */; };
 		04D3DFBB5C47E8CBDF53A516 /* GeneralCreditInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A933B446A9F3954893995 /* GeneralCreditInfo.swift */; };
 		06A0FF1355AE27CB453B950A /* UIClass+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68525F3624C8F287FE8395F /* UIClass+Extensions.swift */; };
 		0861B73CB045D1A173DA315E /* CreditType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C44071265948EF3C3FB1A8 /* CreditType.swift */; };
@@ -18,6 +19,7 @@
 		103DAE3437A64C29EA4DCDB3 /* StatsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48E87FDA8855EC18440FE82 /* StatsInfo.swift */; };
 		11A181C3899B827AFD472BC6 /* DebtRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C033B9138CB3FFA525F6D /* DebtRepositoryProtocol.swift */; };
 		13B3CC5985F773E1E5181DF3 /* MockCalculatorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000190DA7A95BBD10F52975E /* MockCalculatorRepository.swift */; };
+		189361A09B4D13A9B3E02394 /* UsecaseValidateImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275857E8D11B501220867FC3 /* UsecaseValidateImplTests.swift */; };
 		18E566DE3288F25CE5FCA166 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994AA232E8A855FF3BE12AFF /* InputField.swift */; };
 		190A09F04B7FFAD763FB0135 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08825E32A27BF17A420D33E6 /* UIColor+Extensions.swift */; };
 		191AAE305BB8CF706C4FA602 /* DebtDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A04E973B27F78FD1415CD /* DebtDetailsViewController.swift */; };
@@ -60,6 +62,8 @@
 		7919D43001BF731A68D89564 /* DebtDetailsBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1F8EB226DF035D69043A99 /* DebtDetailsBlock.swift */; };
 		800EEA184AD77CF964AFFC40 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A4468515926A251347AA2 /* UIKit+Extensions.swift */; };
 		81BCB8B09B388C453C207AB7 /* AddDebtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4AB5276896862AD9F47C0C /* AddDebtView.swift */; };
+		82EBDA26EADAA69737A60743 /* MockRepositoryValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA41266F61BBB1805030301 /* MockRepositoryValidate.swift */; };
+		836502C0A2BBB9DAEDDDFFC3 /* CreditStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BCA2BB1CA158234A132B17 /* CreditStorageTests.swift */; };
 		8660484A43F3012E82AEE156 /* PaymentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B91EC983A850E7AD4C4F189 /* PaymentDTO.swift */; };
 		86EEF46D28CD1B74196916CC /* PasswordInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE45670002B1CEC270E407 /* PasswordInputViewModel.swift */; };
 		8E6859873264A2E5434BFA2A /* FormatNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E4B82E90CA7DEECC102E6C /* FormatNumber.swift */; };
@@ -121,6 +125,7 @@
 		08825E32A27BF17A420D33E6 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		0AFDF815369AE188FB9D51CB /* PasswordInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputViewController.swift; sourceTree = "<group>"; };
 		0BE1A06B87EA2FCB116B6A21 /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		0CA41266F61BBB1805030301 /* MockRepositoryValidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepositoryValidate.swift; sourceTree = "<group>"; };
 		10CB12BC6216AFB7C01318AE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		12E37D98E1FACF458518D37D /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		13B624865749D37D64E111B4 /* NotificationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDTO.swift; sourceTree = "<group>"; };
@@ -134,6 +139,7 @@
 		22993D988A6A76D0D10454BC /* CreditCardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInfo.swift; sourceTree = "<group>"; };
 		232C033B9138CB3FFA525F6D /* DebtRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtRepositoryProtocol.swift; sourceTree = "<group>"; };
 		262A372691AC0B808D058730 /* DebtDetailsProgressInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtDetailsProgressInfo.swift; sourceTree = "<group>"; };
+		275857E8D11B501220867FC3 /* UsecaseValidateImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseValidateImplTests.swift; sourceTree = "<group>"; };
 		2804E1118EEF1136D2F9C2B8 /* CalculatorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorRepository.swift; sourceTree = "<group>"; };
 		2A3D801EE401C559DD23188D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		2B91EC983A850E7AD4C4F189 /* PaymentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDTO.swift; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 		78E94B612A5B910825BDC49C /* DebtCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtCalculation.swift; sourceTree = "<group>"; };
 		79A5E59568F71E9AB6E19C95 /* AddDebtCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDebtCoordinator.swift; sourceTree = "<group>"; };
 		7AA76265EF83B91B9ABD9BD2 /* AddDebtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDebtViewController.swift; sourceTree = "<group>"; };
+		7F6F5947531110F7135047F0 /* RepositoryValidateImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryValidateImplTests.swift; sourceTree = "<group>"; };
 		806A4468515926A251347AA2 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		84A8B1DCB870651F9C80F499 /* DebtDetailsInfoBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtDetailsInfoBlock.swift; sourceTree = "<group>"; };
 		8794E5A08A440339BB976EED /* CreditTypeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditTypeDTO.swift; sourceTree = "<group>"; };
@@ -187,6 +194,7 @@
 		ADF58F968F21C6670012BE24 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AE4C4BD53C50DC7A5FB514C0 /* LocalizedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKey.swift; sourceTree = "<group>"; };
 		AF53CFDBE2CB6B49662DFBE9 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		B0BCA2BB1CA158234A132B17 /* CreditStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditStorageTests.swift; sourceTree = "<group>"; };
 		B1216261660367933953F9CF /* HomeView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+Ext.swift"; sourceTree = "<group>"; };
 		B743675550640B2E814C1917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBB0E46855D40AEE3DCBF8DB /* CalculatorUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUseCaseTests.swift; sourceTree = "<group>"; };
@@ -243,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				C46220D296D2C8CBCE2D1615 /* Calculator */,
+				40A0C42538EF86684A0A7ECF /* Debt */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -357,11 +366,21 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		40A0C42538EF86684A0A7ECF /* Debt */ = {
+			isa = PBXGroup;
+			children = (
+				0CA41266F61BBB1805030301 /* MockRepositoryValidate.swift */,
+			);
+			path = Debt;
+			sourceTree = "<group>";
+		};
 		41294413AD1D19C55378A8C9 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				85821DA9C936BA8A76584C7A /* Calculator */,
 				94603D8B67AC07D73FF0ECE5 /* Core */,
+				DE7E25EB16F93FBC367562FF /* Debt */,
+				62BB53DE4AEA8DBD0D7434A9 /* Storage */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -420,6 +439,14 @@
 				6B7D8AB0574630A14E78D305 /* UseCases */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		62BB53DE4AEA8DBD0D7434A9 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B0BCA2BB1CA158234A132B17 /* CreditStorageTests.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		632C54AE5756C3984C20819D /* Views */ = {
@@ -740,6 +767,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		DE7E25EB16F93FBC367562FF /* Debt */ = {
+			isa = PBXGroup;
+			children = (
+				7F6F5947531110F7135047F0 /* RepositoryValidateImplTests.swift */,
+				275857E8D11B501220867FC3 /* UsecaseValidateImplTests.swift */,
+			);
+			path = Debt;
+			sourceTree = "<group>";
+		};
 		DEF16D8408E5E3389E8CE437 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -953,9 +989,13 @@
 				2B6BBDB8DC73547143E22AA6 /* CalculatorRepositoryTests.swift in Sources */,
 				679A2BC53E25F053D766467D /* CalculatorUseCaseTests.swift in Sources */,
 				3EB3684DF5E150C9B72644E0 /* CalculatorViewModelTests.swift in Sources */,
+				836502C0A2BBB9DAEDDDFFC3 /* CreditStorageTests.swift in Sources */,
 				B2D29A0533DB6E214672DE58 /* ZaimkaTests.swift in Sources */,
 				A41E6EA8EFED3873CE5F8F3A /* FormatNumberTests.swift in Sources */,
 				13B3CC5985F773E1E5181DF3 /* MockCalculatorRepository.swift in Sources */,
+				82EBDA26EADAA69737A60743 /* MockRepositoryValidate.swift in Sources */,
+				02BBB79BBB0A966AB0B846CB /* RepositoryValidateImplTests.swift in Sources */,
+				189361A09B4D13A9B3E02394 /* UsecaseValidateImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

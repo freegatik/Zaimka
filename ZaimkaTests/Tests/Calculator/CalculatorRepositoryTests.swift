@@ -40,4 +40,15 @@ struct CalculatorRepositoryTests {
 
         #expect(abs(overpayment - 6618.56) < 0.01)
     }
+
+    @Test func calculateTotalPaid_multipliesPaymentByTerm() {
+        let repository = CalculatorRepository()
+
+        let totalPaid = repository.calculateTotalPaid(
+            monthlyPayment: 100,
+            term: 24
+        )
+
+        #expect(totalPaid == 2400)
+    }
 }

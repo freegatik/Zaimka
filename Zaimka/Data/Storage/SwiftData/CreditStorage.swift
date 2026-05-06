@@ -8,6 +8,7 @@
 import Foundation
 import SwiftData
 
+// swiftlint:disable type_body_length
 @MainActor
 final class CreditStorage: ObservableObject {
     private let modelContainer: ModelContainer
@@ -48,6 +49,14 @@ final class CreditStorage: ObservableObject {
         }
         modelContainer = container
         modelContext = context
+        Task { await updateCredits() }
+    }
+
+    /// Unit tests and previews: inject a stack (typically `ModelConfiguration(isStoredInMemoryOnly: true)`).
+    init(modelContainer: ModelContainer, modelContext: ModelContext) {
+        self.modelContainer = modelContainer
+        self.modelContext = modelContext
+        needsUpdate = true
         Task { await updateCredits() }
     }
 
@@ -160,7 +169,9 @@ final class CreditStorage: ObservableObject {
 
     func clearAllCredits() {
         do {
-            for credit in credits {
+            let descriptor = FetchDescriptor<CreditModel>()
+            let allCredits = try modelContext.fetch(descriptor)
+            for credit in allCredits {
                 modelContext.delete(credit)
             }
             try modelContext.save()
@@ -233,3 +244,4 @@ final class CreditStorage: ObservableObject {
         }
     }
 }
+// swiftlint:enable type_body_length

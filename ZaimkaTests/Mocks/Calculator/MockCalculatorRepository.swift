@@ -13,6 +13,7 @@ final class MockCalculatorRepository: CalculatorRepositoryProtocol {
     var monthlyPaymentToReturn: Double = 0
     var overpaymentToReturn: Double = 0
     var totalPaidToReturn: Double = 0
+    var saveCalculationError: Error?
 
     var calculateMonthlyPaymentCallCount = 0
     var calculateOverpaymentCallCount = 0
@@ -36,5 +37,8 @@ final class MockCalculatorRepository: CalculatorRepositoryProtocol {
 
     func saveCalculation(_ calculation: DebtCalculation) async throws {
         saveCalculationCallCount += 1
+        if let saveCalculationError {
+            throw saveCalculationError
+        }
     }
 }
