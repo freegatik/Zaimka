@@ -244,4 +244,5 @@ final class CreditStorage: ObservableObject {
         }
     }
 }
+
 // swiftlint:enable type_body_length
