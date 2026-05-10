@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Zaimka/Presentation/Common/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png" alt="Zaimka" width="200" height="200" />
+</p>
+
 # Zaimka
 
 Учёт кредитов и займов. Swift 6, UIKit + SwiftUI, SwiftData.
