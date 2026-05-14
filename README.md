@@ -4,15 +4,15 @@
 
 # Zaimka
 
-Учёт кредитов и займов. Swift 6, UIKit + SwiftUI, SwiftData.
+Loan and debt tracker. Swift 6, UIKit + SwiftUI, SwiftData.
 
 [![Build](https://github.com/freegatik/Zaimka/actions/workflows/build.yml/badge.svg)](https://github.com/freegatik/Zaimka/actions/workflows/build.yml)
 [![Tests](https://github.com/freegatik/Zaimka/actions/workflows/test.yml/badge.svg)](https://github.com/freegatik/Zaimka/actions/workflows/test.yml)
 [![Lint](https://github.com/freegatik/Zaimka/actions/workflows/lint.yml/badge.svg)](https://github.com/freegatik/Zaimka/actions/workflows/lint.yml)
 
-## Сборка
+## Build
 
-Требования: Xcode 16, iOS 17.6+.
+Requirements: Xcode 16, iOS 17.6+.
 
 ```bash
 git clone https://github.com/freegatik/Zaimka.git
@@ -23,26 +23,26 @@ xcodegen generate
 open Zaimka.xcodeproj
 ```
 
-Схема **Zaimka**, симулятор iPhone.
+Select the **Zaimka** scheme and an iPhone simulator.
 
-## Структура
+## Architecture
 
-Слои: Presentation → Domain → Data. Подробнее: [docs/adr/](docs/adr/).
+Layers: Presentation → Domain → Data. Details: [docs/adr/](docs/adr/).
 
-## Тесты
+## Tests
 
-Сейчас автотесты есть только у **калькулятора** (вся цепочка до экрана), у функции **форматирования сумм** и у **проверки строк** из локализации. **База (SwiftData), список кредитов, детали долга и пароль** тестами не покрыты — при правках там ошибки можно не заметить сразу.
+Currently, automated tests cover only the **calculator** (full chain down to the screen), the **amount formatting** function, and **localization string validation**. **Database (SwiftData), loan list, debt details, and password flow** are not covered — regressions there can go unnoticed.
 
-`Cmd+U` или workflow **Unit Tests** в CI.
+Run with `Cmd+U` or via the **Unit Tests** workflow in CI.
 
-## Код
+## Code style
 
-`swiftformat .`, `swiftlint`. В CI — SwiftFormat **0.61** и флаг `--disable redundantViewBuilder` (SwiftUI). Локально подойдёт и 0.58; для того же набора правил, что в CI, см. `.github/scripts/install-swiftformat.sh`.
+`swiftformat .`, `swiftlint`. CI uses SwiftFormat **0.61** with `--disable redundantViewBuilder` (SwiftUI). Local 0.58 works too; for the exact rule set used in CI see `.github/scripts/install-swiftformat.sh`.
 
-## Прочее
+## Misc
 
-[CONTRIBUTING.md](CONTRIBUTING.md). Подпись в Xcode — свой Team. Секреты не в git (см. `.gitignore`).
+See [CONTRIBUTING.md](CONTRIBUTING.md). Use your own Team for Xcode signing. Secrets are kept out of git (see `.gitignore`).
 
-## Лицензия
+## License
 
-Исходный код распространяется на условиях [MIT License](LICENSE): разрешено свободное использование и модификация при сохранении уведомления об авторских правах. Полный текст — в файле `LICENSE` в корне репозитория.
+Source code is released under the [MIT License](LICENSE): free to use and modify provided the copyright notice is preserved. Full text is in the `LICENSE` file at the repository root.
